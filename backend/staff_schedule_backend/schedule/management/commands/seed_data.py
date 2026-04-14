@@ -10,11 +10,16 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         # Create users
         users_data = [
-            {'email': 'sujan@gmail.com', 'password': 'sujan', 'name': 'Admin User', 'role': 'admin'},
-            {'email': 'saroj@gmail.com', 'password': 'saroj', 'name': 'saroj giri', 'role': 'instructor'},
-            {'email': 'promod@gmail.com', 'password': 'pramod', 'name': 'pramod mahato', 'role': 'instructor'},
-            {'email': 'priya@academy.com', 'password': 'priya123', 'name': 'Priya Patel', 'role': 'instructor'},
-            {'email': 'david@academy.com', 'password': 'david123', 'name': 'David Kim', 'role': 'instructor'},
+            {'email': 'himal@sipalaya.com', 'password': 'himal', 'name': 'Himal Rawal', 'role': 'Admin'},
+            {'email': 'sujan@sipalaya.com', 'password': 'sujan', 'name': 'Sujan Thadarai', 'role': 'instructor'},
+            {'email': 'saroj@sipalaya.com', 'password': 'saroj', 'name': 'saroj giri', 'role': 'instructor'},
+            {'email': 'pramod@sipalaya.com', 'password': 'pramod', 'name': 'pramod mahato', 'role': 'instructor'},
+            {'email': 'saurab@sipalaya.com', 'password': 'saurab', 'name': 'Saurab Karki', 'role': 'instructor'},
+            {'email': 'rajan@sipalaya.com', 'password': 'rajan', 'name': 'Rajan Shrestha', 'role': 'instructor'},
+            {'email': 'sangam@sipalaya.com', 'password': 'sangam', 'name': 'Sangam Swarnakar', 'role': 'instructor'},
+            {'email': 'ajay@sipalaya.com', 'password': 'ajay', 'name': 'Ajay Dhoju', 'role': 'instructor'},
+            {'email': 'kirtan@sipalaya.com', 'password': 'kirtan', 'name': 'Kritan Shrestha', 'role': 'instructor'},
+            {'email': 'ramesh@sipalaya.com', 'password': 'ramesh', 'name': 'Ramesh Bista', 'role': 'Admin'},
         ]
         
         for user_data in users_data:

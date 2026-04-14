@@ -74,8 +74,8 @@ TEMPLATES = [
 # CORS settings
 CORS_ALLOWED_ORIGINS = [
     "https://kpi-record-git-main-sujanthadarais-projects.vercel.app",
-    
-    
+    "http://localhost:8080",  # Add your local development URL
+    "http://127.0.0.1:8080", # Alternative local address
 ]
 
 CORS_ALLOW_CREDENTIALS = True

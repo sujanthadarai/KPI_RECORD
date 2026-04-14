@@ -101,7 +101,7 @@ const CHART_COLORS = {
   purple: "#8b5cf6",
 };
 
-const API_BASE = "http://localhost:8000/api";
+const API_BASE = "https://kpi-record.onrender.com/api";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Helper Functions

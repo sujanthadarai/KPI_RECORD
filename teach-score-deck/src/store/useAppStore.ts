@@ -3,7 +3,7 @@ import type { User, DailyReport, Attendance, TimeSlot, TaskStatus, InstructorKPI
 import { toast } from "sonner";
 
 // API Base URL - change this to your Django server URL
-const API_BASE_URL = "http://localhost:8000/api";
+const API_BASE_URL = "https://kpi-record.onrender.com/api";
 
 interface AppState {
   currentUser: User | null;
@@ -184,7 +184,7 @@ export const useAppStore = create<AppState>((set, get) => ({
       let errorMessage = "Invalid credentials. Please check your username and password.";
       
       if (error.message.includes("Failed to fetch") || error.message.includes("network")) {
-        errorMessage = "Cannot connect to server. Please check if backend is running on http://localhost:8000";
+        errorMessage = "Cannot connect to server. Please check if backend is running on https://kpi-record.onrender.com";
       } else if (error.message.includes("401")) {
         errorMessage = "Invalid username or password";
       }

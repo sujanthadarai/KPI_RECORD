@@ -311,7 +311,7 @@ const AdminDashboard = () => {
   const fetchInstructors = useAppStore((s) => s.fetchInstructors);
 
   // ── API Functions ─────────────────────────────────────────────────────────
-  const API_BASE = "http://localhost:8000/api";
+  const API_BASE = "https://kpi-record.onrender.com/api";
   
   const getAuthToken = () => localStorage.getItem("access_token");
 
